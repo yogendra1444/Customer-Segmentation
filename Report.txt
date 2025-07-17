@@ -1,0 +1,72 @@
+📌 1. Project Title
+Customer Segmentation using KMeans Clustering
+
+📌 2. Objective
+To segment customers based on purchasing behavior using clustering techniques, so the business can personalize marketing strategies and improve sales.
+
+📌 3. Dataset Summary
+Dataset: ifood_df.csv
+
+Total Rows: ~2200 customers
+
+Features include:
+
+Demographics: Age, Income, Education, Marital Status
+
+Spending: Wines, Meat, Fruits, etc.
+
+Online Activity: Web visits, Web purchases
+
+Campaign Response
+
+📌 4. Data Cleaning & Preprocessing
+Removed rows with missing Income
+
+Created new feature: Age = 2025 - Year_Birth
+
+Selected relevant features for clustering
+
+Standardized data using StandardScaler
+
+📌 5. Clustering
+Used KMeans Clustering
+
+Applied Elbow Method → Chose k=4
+
+Assigned each customer to a cluster (0–3)
+
+Saved the model in models/kmeans_model.pkl
+
+📌 6. Visualizations
+Bar Plots: Education & Marital Status distribution
+
+PCA Plot: Visual representation of clusters
+
+Elbow Curve: Showed optimal number of clusters
+
+📌 7. Cluster Insights (example)
+You can add a few insights like:
+
+Cluster 0: High spenders, older, married
+
+Cluster 1: Young, low income, low spending
+
+Cluster 2: Medium income, buys more wine
+
+Cluster 3: Engages online, shops via catalog
+
+📌 8. Conclusion
+The customer base was successfully segmented into 4 distinct groups. These insights can help:
+
+Personalize email campaigns
+
+Design product bundles
+
+Identify loyal vs. inactive customers
+
+📌 9. Future Work (Optional)
+Build a recommendation system
+
+Add deep learning for behavior prediction
+
+Deploy on a web app (e.g., Streamlit)
